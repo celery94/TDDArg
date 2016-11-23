@@ -8,7 +8,6 @@ namespace TDDArg.Test
     public class ThreeSumTest
     {
 
-        [Test]
         public void ThreeSum_Test()
         {
             int[] nums = new[] { -1, 0, 1, 2, -1, -4 };
