@@ -53,6 +53,7 @@
     <Compile Include="AddTwoNumberTest.cs" />
     <Compile Include="FindMedianSortedArraysTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
+    <Compile Include="LongestPalindromeFuncTest.cs" />
     <Compile Include="ThreeSumTest.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

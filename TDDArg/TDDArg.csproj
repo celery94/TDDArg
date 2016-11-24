@@ -44,6 +44,7 @@
     <Compile Include="FindMedianSortedArrays.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="ListNode.cs" />
+    <Compile Include="LongestPalindrome.cs" />
     <Compile Include="ThreeSum.cs" />
     <Compile Include="TwoSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
