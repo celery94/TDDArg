@@ -36,6 +36,16 @@ namespace TDDArg.Test
         }
 
         [Test]
+        public void LongestPalindrome_Even_Result_MM()
+        {
+            var input = "aaaa";
+
+            var ret = LongestPalindrome.LongestPalindromeFunc(input);
+
+            Assert.AreEqual("aaaa", ret);
+        }
+
+        [Test]
         public void LongestPalindrome_Odd_Result_Single()
         {
             var input = "aa";
