@@ -2,8 +2,8 @@
 {
     public class ListNode
     {
-        public int Val;
-        public ListNode Next;
-        public ListNode(int x) { Val = x; }
+        public int val;
+        public ListNode next;
+        public ListNode(int x) { val = x; }
     }
 }
