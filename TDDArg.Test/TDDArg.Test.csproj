@@ -42,6 +42,7 @@
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LongestPalindromeFuncTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
+    <Compile Include="RegularExpressionMatchingTest.cs" />
     <Compile Include="ReverseIntTest.cs" />
     <Compile Include="StringtoIntegerTest.cs" />
     <Compile Include="ThreeSumTest.cs" />

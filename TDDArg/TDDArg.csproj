@@ -46,6 +46,7 @@
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="PalindromeNumber.cs" />
+    <Compile Include="RegularExpressionMatching.cs" />
     <Compile Include="ReverseInt.cs" />
     <Compile Include="StringtoInteger .cs" />
     <Compile Include="ThreeSum.cs" />
