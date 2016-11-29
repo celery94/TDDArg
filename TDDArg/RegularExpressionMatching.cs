@@ -33,6 +33,10 @@
                 for (int indexP = 0; indexP < p.ToCharArray().Length; indexP++)
                 {
                     var pChar = p[indexP];
+                    if (indexS >= s.Length && pChar != '*')
+                    {
+                        return false;
+                    }
 
                     if (pChar == '.')
                     {
@@ -40,7 +44,7 @@
                     }
                     else if (pChar != '*')
                     {
-                        if (indexS >= s.Length || pChar != s[indexS])
+                        if (pChar != s[indexS])
                         {
                             return false;
                         }
@@ -51,13 +55,13 @@
                     {
                         if (indexP != p.Length - 1)
                         {
-                            var nextChar = p[indexP + 1];
-                            while (indexS < s.Length - 1 && s[indexS] != nextChar)
+                            var nextChar = p[++indexP];
+                            while (indexS <= s.Length - 1 && s[indexS] != nextChar)
                             {
                                 indexS++;
                             }
-
-                            if (indexS == s.Length - 1)
+                            
+                            if (indexS == s.Length - 1 && indexP == p.Length - 1)
                             {
                                 return true;
                             }
