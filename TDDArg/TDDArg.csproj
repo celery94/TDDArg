@@ -46,6 +46,7 @@
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="ListNode.cs" />
+    <Compile Include="LongestCommonPrefix.cs" />
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
