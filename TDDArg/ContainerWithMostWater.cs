@@ -4,17 +4,29 @@ namespace TDDArg
 {
     public class ContainerWithMostWater
     {
+        /// <summary>
+        /// why this solution is acceptable?
+        /// </summary>
+        /// <param name="height"></param>
+        /// <returns></returns>
         public static int MaxArea(int[] height)
         {
             int maxArea = 0;
             if (height.Length >= 2)
             {
-                for (int i = 0; i < height.Length - 1; i++)
+                int i = 0, j = height.Length - 1;
+                while (i < j)
                 {
-                    for (int j = i + 1; j < height.Length; j++)
+                    var area = Math.Min(height[i], height[j]) * (j - i);
+                    maxArea = Math.Max(maxArea, area);
+
+                    if (height[i] < height[j])
                     {
-                        var area = Math.Min(height[i], height[j]) * (j - i);
-                        maxArea = Math.Max(maxArea, area);
+                        i++;
+                    }
+                    else
+                    {
+                        j--;
                     }
                 }
             }
