@@ -60,7 +60,7 @@
                             {
                                 indexS++;
                             }
-                            
+
                             if (indexS == s.Length - 1 && indexP == p.Length - 1)
                             {
                                 return true;

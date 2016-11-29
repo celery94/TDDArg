@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoNumberTest.cs" />
+    <Compile Include="ContainerWithMostWaterTest.cs" />
     <Compile Include="FindMedianSortedArraysTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LongestPalindromeFuncTest.cs" />

@@ -40,5 +40,30 @@ namespace TDDArg.Test
             Assert.AreEqual(true, RegularExpressionMatching.IsMatch("aaaaac", "a*c"));
         }
 
+        [Test]
+        public void RegularExpressionMatching_with_star_match_empty_true()
+        {
+            Assert.AreEqual(true, RegularExpressionMatching.IsMatch("ac", "a*c"));
+            Assert.AreEqual(true, RegularExpressionMatching.IsMatch("acv", "a*c*v"));
+        }
+
+        [Test]
+        [Ignore("")]
+        public void RegularExpressionMatching_with_star_match_duplicate_true()
+        {
+            Assert.AreEqual(true, RegularExpressionMatching.IsMatch("acdc", "a*c"));
+        }
+
+        [Test]
+        public void RegularExpressionMatching_with_star_false()
+        {
+            Assert.AreEqual(false, RegularExpressionMatching.IsMatch("a", "ab*"));
+        }
+
+        [Test]
+        public void RegularExpressionMatching_with_star_false_long()
+        {
+            Assert.AreEqual(false, RegularExpressionMatching.IsMatch("ab", "ab*c"));
+        }
     }
 }

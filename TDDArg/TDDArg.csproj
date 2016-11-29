@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoNumber.cs" />
+    <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="ListNode.cs" />
