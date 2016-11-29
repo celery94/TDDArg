@@ -43,6 +43,7 @@
     <Compile Include="AddTwoNumber.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
+    <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestPalindrome.cs" />

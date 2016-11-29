@@ -40,6 +40,7 @@
     <Compile Include="AddTwoNumberTest.cs" />
     <Compile Include="ContainerWithMostWaterTest.cs" />
     <Compile Include="FindMedianSortedArraysTest.cs" />
+    <Compile Include="IntegerToRomanTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LongestPalindromeFuncTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
