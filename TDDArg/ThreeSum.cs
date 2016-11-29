@@ -12,18 +12,40 @@ namespace TDDArg
 
             nums = nums.OrderBy(q => q).ToArray();
 
-            for (int i = 0; i < nums.Length; i++)
+            for (int start = 0; start < nums.Length - 1; start++)
             {
-                for (int j = i + 1; j < nums.Length; j++)
+                if (start != 0 && nums[start] == nums[start - 1])
                 {
-                    for (int k = j + 1; k < nums.Length; k++)
+                    continue;
+                }
+
+                int end = nums.Length - 1;
+
+                while (end > start + 1)
+                {
+                    if (end != nums.Length - 1 && nums[end] == nums[end + 1])
                     {
-                        if (nums[i] + nums[j] + nums[k] == 0)
-                        {
-                            if (!result.Any(q => q[0] == nums[i] && q[1] == nums[j] && q[2] == nums[k]))
-                                result.Add(new List<int>() { nums[i], nums[j], nums[k] });
-                        }
+                        end--;
+                        continue;
                     }
+
+                    int next = start + 1;
+                    while (next < end)
+                    {
+                        if (next != start + 1 && nums[next] == nums[next - 1])
+                        {
+                            next++;
+                            continue;
+                        }
+
+                        if (nums[start] + nums[next] + nums[end] == 0)
+                        {
+                            result.Add(new List<int>() { nums[start], nums[next], nums[end] });
+                        }
+                        next++;
+                    }
+
+                    end--;
                 }
             }
 

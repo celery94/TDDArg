@@ -20,5 +20,18 @@ namespace TDDArg.Test
 
             Assert.AreEqual(result, ThreeSum.ThreeSumFunc(nums));
         }
+
+        [Test]
+        public void ThreeSum_four_zero()
+        {
+            int[] nums = new[] { 0, 0, 0, 0 };
+
+            var result = new List<List<int>>()
+            {
+                new List<int>() {0,0,0},
+            };
+
+            Assert.AreEqual(result, ThreeSum.ThreeSumFunc(nums));
+        }
     }
 }
