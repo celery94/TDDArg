@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TDDArg
 {
     public class ThreeSum
     {
-        public static List<List<int>> ThreeSumFunc(int[] nums)
+        public static IList<IList<int>> ThreeSumFunc(int[] nums)
         {
-            List<List<int>> result = new List<List<int>>();
+            IList<IList<int>> result = new List<IList<int>>();
+
+            nums = nums.OrderBy(q => q).ToArray();
 
             for (int i = 0; i < nums.Length; i++)
             {
@@ -17,7 +20,8 @@ namespace TDDArg
                     {
                         if (nums[i] + nums[j] + nums[k] == 0)
                         {
-                            result.Add(new List<int>() { nums[i] , nums[j] , nums[k] });
+                            if (!result.Any(q => q[0] == nums[i] && q[1] == nums[j] && q[2] == nums[k]))
+                                result.Add(new List<int>() { nums[i], nums[j], nums[k] });
                         }
                     }
                 }
