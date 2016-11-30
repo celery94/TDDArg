@@ -49,6 +49,7 @@
     <Compile Include="ReverseIntTest.cs" />
     <Compile Include="RomanToIntegerTest.cs" />
     <Compile Include="StringtoIntegerTest.cs" />
+    <Compile Include="ThreeSumClosestTest.cs" />
     <Compile Include="ThreeSumTest.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
