@@ -42,6 +42,7 @@
     <Compile Include="FindMedianSortedArraysTest.cs" />
     <Compile Include="IntegerToRomanTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
+    <Compile Include="LetterCombinationsOfAPhoneNumberTest.cs" />
     <Compile Include="LongestCommonPrefixTest.cs" />
     <Compile Include="LongestPalindromeFuncTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
