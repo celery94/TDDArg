@@ -6,41 +6,25 @@ namespace TDDArg
     {
         public static bool IsValid(string s)
         {
+            Dictionary<char, char> dictionary = new Dictionary<char, char>()
+            {
+                {')','(' },
+                {']','['},
+                {'}','{' },
+            };
+
             Stack<char> stack = new Stack<char>();
 
             foreach (var ch in s.ToCharArray())
             {
-                if (ch == '(' || ch == '[' || ch == '{')
+                if (dictionary.ContainsValue(ch))
                 {
                     stack.Push(ch);
                 }
 
-                if (ch == ')')
+                if (dictionary.ContainsKey(ch))
                 {
-                    if (stack.Count > 0 && stack.Peek() == '(')
-                    {
-                        stack.Pop();
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-                if (ch == ']')
-                {
-                    if (stack.Count > 0 && stack.Peek() == '[')
-                    {
-                        stack.Pop();
-                    }
-                    else
-                    {
-                        return false;
-                    }
-                }
-
-                if (ch == '}')
-                {
-                    if (stack.Count > 0 && stack.Peek() == '{')
+                    if (stack.Count > 0 && stack.Peek() == dictionary[ch])
                     {
                         stack.Pop();
                     }
