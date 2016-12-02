@@ -48,6 +48,7 @@
     <Compile Include="LongestPalindromeFuncTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
     <Compile Include="RegularExpressionMatchingTest.cs" />
+    <Compile Include="RemoveNthNodeFromEndOfListTest.cs" />
     <Compile Include="ReverseIntTest.cs" />
     <Compile Include="RomanToIntegerTest.cs" />
     <Compile Include="StringtoIntegerTest.cs" />

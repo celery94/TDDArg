@@ -52,6 +52,7 @@
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
+    <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="StringtoInteger .cs" />
