@@ -53,6 +53,7 @@
     <Compile Include="RegularExpressionMatchingTest.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListTest.cs" />
     <Compile Include="ReverseIntTest.cs" />
+    <Compile Include="ReverseLinkedListTest.cs" />
     <Compile Include="RomanToIntegerTest.cs" />
     <Compile Include="StringtoIntegerTest.cs" />
     <Compile Include="ThreeSumClosestTest.cs" />
