@@ -41,6 +41,7 @@
     <Compile Include="ContainerWithMostWaterTest.cs" />
     <Compile Include="FindMedianSortedArraysTest.cs" />
     <Compile Include="FourSumTest.cs" />
+    <Compile Include="GenerateParenthesesTest.cs" />
     <Compile Include="IntegerToRomanTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumberTest.cs" />
