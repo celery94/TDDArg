@@ -47,6 +47,7 @@
     <Compile Include="LetterCombinationsOfAPhoneNumberTest.cs" />
     <Compile Include="LongestCommonPrefixTest.cs" />
     <Compile Include="LongestPalindromeFuncTest.cs" />
+    <Compile Include="MergeKSortedListsTest.cs" />
     <Compile Include="MergeTwoSortedListsTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
     <Compile Include="RegularExpressionMatchingTest.cs" />

@@ -51,6 +51,7 @@
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefix.cs" />
     <Compile Include="LongestPalindrome.cs" />
+    <Compile Include="MergeKSortedLists.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
