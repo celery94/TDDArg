@@ -55,6 +55,7 @@
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
     <Compile Include="ReverseLinkedList.cs" />
