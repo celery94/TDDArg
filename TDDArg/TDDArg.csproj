@@ -45,6 +45,7 @@
     <Compile Include="FindMedianSortedArrays.cs" />
     <Compile Include="FourSum.cs" />
     <Compile Include="GenerateParentheses.cs" />
+    <Compile Include="ImplementStrStr.cs" />
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumber.cs" />
