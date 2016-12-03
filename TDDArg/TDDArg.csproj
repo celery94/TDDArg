@@ -58,6 +58,7 @@
     <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
     <Compile Include="ReverseLinkedList.cs" />
+    <Compile Include="ReverseNodesInKGroup.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="StringtoInteger .cs" />
     <Compile Include="ThreeSum.cs" />
