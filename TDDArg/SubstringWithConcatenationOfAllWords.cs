@@ -10,26 +10,23 @@ namespace TDDArg
         {
             List<int> result = new List<int>();
 
-            for (int i = 0; i < words.Length; i++)
+            var word = words[0];
+            int index = s.IndexOf(word);
+            while (index != -1)
             {
-                var word = words[i];
-                int index = s.IndexOf(word);
-                while (index != -1)
+                int preIndex = index;
+                int nextIndex = index + word.Length;
+
+                if (words.Length > 1)
                 {
-                    int preIndex = index;
-                    int nextIndex = index + word.Length;
-
-                    if (words.Length > 1)
-                    {
-                        FindString(s, result, words, preIndex, nextIndex, new List<int>() { i });
-                    }
-                    else
-                    {
-                        result.Add(index);
-                    }
-
-                    index = s.IndexOf(word, index + 1);
+                    FindString(s, result, words, preIndex, nextIndex, new List<int>() { 0 });
                 }
+                else
+                {
+                    result.Add(index);
+                }
+
+                index = s.IndexOf(word, index + 1);
             }
 
             return result;
@@ -37,13 +34,12 @@ namespace TDDArg
 
         private static void FindString(string s, List<int> result, string[] words, int preIndex, int nextIndex, List<int> wordsUsed)
         {
-            if (words.Length <= wordsUsed.Count) return;
-
             for (int index = 0; index < words.Length; index++)
             {
                 if (wordsUsed.Contains(index)) continue;
 
                 var word = words[index];
+
                 if (nextIndex + word.Length - 1 < s.Length && s.Substring(nextIndex, word.Length) == word)
                 {
                     List<int> used = new List<int>();
