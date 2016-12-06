@@ -61,6 +61,7 @@
     <Compile Include="ReverseNodesInKGroupTest.cs" />
     <Compile Include="RomanToIntegerTest.cs" />
     <Compile Include="StringtoIntegerTest.cs" />
+    <Compile Include="SubstringWithConcatenationOfAllWordsTest.cs" />
     <Compile Include="ThreeSumClosestTest.cs" />
     <Compile Include="ThreeSumTest.cs" />
     <Compile Include="TwoSumTest.cs" />
