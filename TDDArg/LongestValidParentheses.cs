@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace TDDArg
 {
@@ -8,26 +9,56 @@ namespace TDDArg
         {
             int maxLength = 0;
 
-            for (int i = 0; i < s.Length; i++)
+            var validEnd = s.Length - 1;
+            while (validEnd >= 0)
             {
-                Queue<char> queue = new Queue<char>();
-                int j = i;
-                while (j < s.Length)
+                if (s[validEnd] == '(')
                 {
-                    if (queue.Count > 0 && s[j] == ')' && queue.Peek() == '(')
+                    validEnd--;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            for (int start = 0; start <= validEnd; start++)
+            {
+                if (s[start] == ')') continue;
+
+                int queue = 0;
+                int end = start;
+                var nextStart = start;
+                while (end <= validEnd)
+                {
+                    if (s[end] == '(')
                     {
-                        queue.Dequeue();
-                        if (queue.Count == 0 && (j - i + 1) > maxLength)
-                        {
-                            maxLength = j - i + 1;
-                        }
+                        queue++;
                     }
                     else
                     {
-                        queue.Enqueue(s[j]);
+                        if (queue > 0)
+                        {
+                            queue--;
+                            if (queue == 0)
+                            {
+                                if (end - start + 1 > maxLength)
+                                {
+                                    maxLength = end - start + 1;
+                                    nextStart = end;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            break;
+                        }
                     }
-                    j++;
+
+                    end++;
                 }
+
+                start = nextStart;
             }
 
             return maxLength;

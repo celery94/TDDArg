@@ -16,5 +16,11 @@ namespace TDDArg.Test
         {
             Assert.AreEqual(4, LongestValidParentheses.FindLongestValidParentheses(")()())"));
         }
+
+        [Test]
+        public void Given_only_start_When_find_Then_return_0()
+        {
+            Assert.AreEqual(0, LongestValidParentheses.FindLongestValidParentheses("((((((((((((((((((((((((("));
+        }
     }
 }
