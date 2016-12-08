@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoNumberTest.cs" />
+    <Compile Include="CombinationSumTest.cs" />
     <Compile Include="ContainerWithMostWaterTest.cs" />
     <Compile Include="DivideTwoIntegersTest.cs" />
     <Compile Include="FindMedianSortedArraysTest.cs" />
