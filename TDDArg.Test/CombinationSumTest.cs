@@ -9,7 +9,7 @@ namespace TDDArg.Test
         [Test]
         public void Given_array_When_find_Then_return()
         {
-            var nums = new int[] { 2, 6, 7 };
+            var nums = new int[] { 2,3, 6, 7 };
 
             var expectResult = new List<List<int>>()
             {
@@ -18,7 +18,7 @@ namespace TDDArg.Test
 
             var result = CombinationSum.CombinationSumFunc(nums, 7);
 
-            Assert.AreEqual(expectResult.Count, result.Count);
+            Assert.AreEqual(2, result.Count);
         }
     }
 }
