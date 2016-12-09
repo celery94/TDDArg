@@ -46,6 +46,7 @@
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="DivideTwoIntegers.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
+    <Compile Include="FirstMissingPositive.cs" />
     <Compile Include="FourSum.cs" />
     <Compile Include="GenerateParentheses.cs" />
     <Compile Include="ImplementStrStr.cs" />
