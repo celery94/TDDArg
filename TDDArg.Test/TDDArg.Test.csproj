@@ -78,6 +78,7 @@
     <Compile Include="SwapNodesInPairsTest.cs" />
     <Compile Include="PermutationsTest.cs" />
     <Compile Include="PermutationsIITest.cs" />
+    <Compile Include="GroupAnagramsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
