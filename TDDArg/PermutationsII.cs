@@ -4,42 +4,38 @@ using System.Linq;
 
 namespace TDDArg
 {
-	public class PermutationsII
-	{
-		public static IList<IList<int>> PermuteUnique(int[] nums)
-		{
-			nums = nums.OrderBy(q => q).ToArray();
+    public class PermutationsII
+    {
+        public static IList<IList<int>> PermuteUnique(int[] nums)
+        {
+            nums = nums.OrderBy(q => q).ToArray();
 
-			List<IList<int>> result = new List<IList<int>>();
+            List<IList<int>> result = new List<IList<int>>();
 
-			Find(result, nums, new List<int> {  });
+            Find(result, nums, new List<int>());
 
-			return result;
-		}
+            return result;
+        }
 
-		static void Find(List<IList<int>> result, int[] nums, List<int> currentList)
-		{
-			if (currentList.Count == nums.Length)
-			{
-				result.Add(currentList.Select(q => nums[q]).ToList());
-				return;
-			}
+        static void Find(List<IList<int>> result, int[] nums, List<int> currentList)
+        {
+            if (currentList.Count == nums.Length)
+            {
+                result.Add(currentList.Select(q => nums[q]).ToList());
+                return;
+            }
 
-			int? pre = null;
-			for (int i = 0; i < nums.Length; i++)
-			{
-				if (!currentList.Contains(i))
-				{
-					var item = nums[i];
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (currentList.Contains(i)) continue;
 
-					if (pre == null) pre = item;
-					else if (pre == item) continue;
+                if (i > 0 && nums[i - 1] == nums[i] && !currentList.Contains(i - 1)) continue;
 
-					currentList.Add(i);
-					Find(result, nums, currentList);
-					currentList.RemoveAt(currentList.Count - 1);
-				}
-			}
-		}
-	}
+                currentList.Add(i);
+                Find(result, nums, currentList);
+
+                currentList.RemoveAt(currentList.Count - 1);
+            }
+        }
+    }
 }
