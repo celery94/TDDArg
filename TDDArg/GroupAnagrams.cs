@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace TDDArg
 {
@@ -7,54 +8,24 @@ namespace TDDArg
 	{
 		public static IList<IList<string>> FindGroupAnagrams(string[] strs)
 		{
-			var result = new List<IList<string>>();
+			Dictionary<string, IList<string>> list = new Dictionary<string, IList<string>>();
 
 			foreach (var str in strs)
 			{
-				bool isFind = false;
-				foreach (var item in result)
+				var key = string.Join("", str.OrderBy(q => q));
+
+				if (list.ContainsKey(key))
 				{
-					if (IsSame(str, item[0]))
-					{
-						item.Add(str);
-						isFind = true;
-						break;
-					}
+					list[key].Add(str);
+					continue;
 				}
-
-				if (!isFind)
-					result.Add(new List<string> { str });
-			}
-
-			return result;
-		}
-
-		public static bool IsSame(string a, string b)
-		{
-			if (a.Length != b.Length) return false;
-
-			var contain = new bool[a.Length];
-
-			foreach (var aItem in a)
-			{
-				for (int i = 0; i < b.Length; i++)
+				else
 				{
-					if (contain[i]) continue;
-
-					if (aItem == b[i])
-					{
-						contain[i] = true;
-						break;
-					}
+					list.Add(key, new List<string> { str });
 				}
 			}
 
-			for (int i = 0; i < b.Length; i++)
-			{
-				if (contain[i] == false) return false;
-			}
-
-			return true;
+			return list.Values.ToList();
 		}
 	}
 }
