@@ -79,6 +79,7 @@
     <Compile Include="PermutationsTest.cs" />
     <Compile Include="PermutationsIITest.cs" />
     <Compile Include="GroupAnagramsTest.cs" />
+    <Compile Include="MathPowTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
