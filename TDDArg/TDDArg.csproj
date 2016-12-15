@@ -84,6 +84,7 @@
     <Compile Include="PermutationsII.cs" />
     <Compile Include="GroupAnagrams.cs" />
     <Compile Include="MathPow.cs" />
+    <Compile Include="LengthOfLastWord.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
