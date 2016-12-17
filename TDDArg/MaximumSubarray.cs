@@ -5,20 +5,23 @@ namespace TDDArg
 	{
 		public static int MaxSubArray(int[] nums)
 		{
-			int maxValue = int.MinValue;
+			//如果当前数组加上当前数的值比数组本身的值还要小，那就需要reset了
 
-			for (int i = 0; i < nums.Length; i++)
+			int maxValue = nums[0];
+			int currentMaxValue = nums[0];
+
+			for (int i = 1; i < nums.Length; i++)
 			{
-				for (int j = i; j < nums.Length; j++)
+				if (currentMaxValue + nums[i] < nums[i])
 				{
-					var sum = 0;
-					for (int k = i; k <= j; k++)
-					{
-						sum += nums[k];
-					}
-
-					maxValue = Math.Max(maxValue, sum);
+					currentMaxValue = nums[i];
 				}
+				else
+				{
+					currentMaxValue += nums[i];
+				}
+
+				maxValue = Math.Max(maxValue, currentMaxValue);
 			}
 
 			return maxValue;
