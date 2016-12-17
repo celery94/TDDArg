@@ -81,6 +81,7 @@
     <Compile Include="GroupAnagramsTest.cs" />
     <Compile Include="MathPowTest.cs" />
     <Compile Include="LengthOfLastWordTest.cs" />
+    <Compile Include="MaximumSubarrayTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
