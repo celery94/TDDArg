@@ -5,23 +5,13 @@ namespace TDDArg
 	{
 		public static bool CanJump(int[] nums)
 		{
-			return Jump(0, nums);
-		}
-
-		public static bool Jump(int index, int[] nums)
-		{
-			if (index == nums.Length - 1) return true;
-
-			var current = nums[index];
-
-			if (current == 0) return false;
-
-			for (int i = 1; i <= current; i++)
+			int maxLocation = 0;
+			for (int i = 0; i < nums.Length; i++)
 			{
-				if (Jump(index + i, nums)) return true;
+				if (maxLocation < i) return false; // if previous maxLocation smaller than i, meaning we cannot reach location i, thus return false.
+				maxLocation = (i + nums[i]) > maxLocation ? i + nums[i] : maxLocation; // greedy:
 			}
-
-			return false;
+			return true;
 		}
 	}
 }
