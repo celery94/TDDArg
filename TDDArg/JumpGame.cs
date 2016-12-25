@@ -12,6 +12,8 @@ namespace TDDArg
 				maxLocation = (i + nums[i]) > maxLocation ? i + nums[i] : maxLocation; // greedy:
 			}
 			return true;
+
+			//I为每一个位置，挨个去检查，前面能否跳到当前位置，如果前面能跳的最远位置已经不能达到改位置，那就failed
 		}
 	}
 }

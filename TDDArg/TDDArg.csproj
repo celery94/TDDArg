@@ -87,6 +87,8 @@
     <Compile Include="LengthOfLastWord.cs" />
     <Compile Include="MaximumSubarray.cs" />
     <Compile Include="JumpGame.cs" />
+    <Compile Include="Interval.cs" />
+    <Compile Include="MergeIntervals.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

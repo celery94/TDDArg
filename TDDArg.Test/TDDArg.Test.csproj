@@ -83,6 +83,7 @@
     <Compile Include="LengthOfLastWordTest.cs" />
     <Compile Include="MaximumSubarrayTest.cs" />
     <Compile Include="JumpGameTest.cs" />
+    <Compile Include="MergeIntervalsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
