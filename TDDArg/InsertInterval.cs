@@ -4,19 +4,19 @@ using System.Linq;
 
 namespace TDDArg
 {
-	public class MergeIntervals
+	public class InsertInterval
 	{
-		public static IList<Interval> Merge(IList<Interval> intervals)
+		public static IList<Interval> Insert(IList<Interval> intervals, Interval newInterval)
 		{
 			var result = new List<Interval>();
-			if (intervals.Count == 0) return result;
+			var list = intervals.ToList();
+			list.Add(newInterval);
+			list = list.OrderBy(q => q.start).ToList();
 
-			intervals = intervals.OrderBy(q => q.start).ToList();
+			int start = list[0].start;
+			int end = list[0].end;
 
-			int start = intervals[0].start;
-			int end = intervals[0].end;
-
-			foreach (var interval in intervals)
+			foreach (var interval in list)
 			{
 				if (interval.start <= end)
 				{
