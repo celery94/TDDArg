@@ -85,6 +85,7 @@
     <Compile Include="JumpGameTest.cs" />
     <Compile Include="MergeIntervalsTest.cs" />
     <Compile Include="InsertIntervalTest.cs" />
+    <Compile Include="RotateListTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">

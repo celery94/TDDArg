@@ -5,24 +5,36 @@ namespace TDDArg
 	{
 		public static ListNode RotateRight(ListNode head, int k)
 		{
-			var end = head;
+			if (head == null || k == 0) return head;
 
+			var end = head;
+			int length = 1;
 			while (end.next != null)
+			{
+				length++;
+				end = end.next;
+			}
+			k = k % length;
+
+			var start = head;
+			end = head;
+
+			for (int i = 0; i < k; i++)
 			{
 				end = end.next;
 			}
 
-			end.next = head;
-
-			for (int i = 0; i <= k; i++)
+			while (end.next != null)
 			{
-				head = head.next;
+				end = end.next;
+				start = start.next;
 			}
 
-			var newHead = head.next;
-			head.next = null;
+			end.next = head;
+			head = start.next;
+			start.next = null;
 
-			return newHead;
+			return head;
 		}
 	}
 }
