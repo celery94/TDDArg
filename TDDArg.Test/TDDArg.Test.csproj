@@ -55,6 +55,7 @@
     <Compile Include="LongestValidParenthesesTest.cs" />
     <Compile Include="MergeKSortedListsTest.cs" />
     <Compile Include="MergeTwoSortedListsTest.cs" />
+    <Compile Include="MinimumPathSumTest.cs" />
     <Compile Include="MultiplyStringsTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
     <Compile Include="PlusOneTest.cs" />
