@@ -75,6 +75,7 @@
     <Compile Include="ThreeSumTest.cs" />
     <Compile Include="TwoSumTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniquePathsTest.cs" />
     <Compile Include="ValidParenthesesTest.cs" />
     <Compile Include="ZigZagConversionTest.cs" />
     <Compile Include="SwapNodesInPairsTest.cs" />
