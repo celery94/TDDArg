@@ -6,40 +6,33 @@ namespace TDDArg
     {
         public static int MinPathSum(int[,] grid)
         {
-            int minSum = Int32.MaxValue;
-            FindMin(grid, 0, 0, 0, ref minSum);
-
-            return minSum;
-        }
-
-        private static void FindMin(int[,] grid, int x, int y, int sum, ref int minSum)
-        {
-            sum += grid[x, y];
-
-            if (sum > minSum) return;
-
             var xLength = grid.GetLength(0);
             var yLength = grid.GetLength(1);
 
-            if (x == xLength - 1 && y == yLength - 1)
+            for (int x = 0; x < xLength; x++)
             {
-                minSum = Math.Min(sum, minSum);
-                return;
-            }
-            else if (x == xLength - 1)
-            {
-                FindMin(grid, x, y + 1, sum, ref minSum);
-                return;
-            }
-            else if (y == yLength - 1)
-            {
-                FindMin(grid, x + 1, y, sum, ref minSum);
-                return;
+                for (int y = 0; y < yLength; y++)
+                {
+                    if (x == 0 && y == 0)
+                    {
+                        grid[x, y] = grid[x, y];
+                    }
+                    else if (x == 0)
+                    {
+                        grid[x, y] = grid[x, y] + grid[x, y - 1];
+                    }
+                    else if (y == 0)
+                    {
+                        grid[x, y] = grid[x, y] + grid[x - 1, y];
+                    }
+                    else
+                    {
+                        grid[x, y] = grid[x, y] + Math.Min(grid[x - 1, y], grid[x, y - 1]);
+                    }
+                }
             }
 
-            FindMin(grid, x + 1, y, sum, ref minSum);
-
-            FindMin(grid, x, y + 1, sum, ref minSum);
+            return grid[xLength - 1, yLength - 1];
         }
     }
 }
