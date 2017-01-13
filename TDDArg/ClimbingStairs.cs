@@ -4,23 +4,15 @@
     {
         public static int ClimbStairs(int n)
         {
-            int count = 0;
-            Climb(n, 0, ref count);
-
-            return count;
+            return Climb(n);
         }
 
-        public static void Climb(int n, int step, ref int count)
+        public static int Climb(int n)
         {
-            n -= step;
+            if (n == 1) return 1;
+            if (n == 2) return 2;
 
-            if (n == 0) count++;
-
-            if (n < 0) return;
-
-            Climb(n, 1, ref count);
-
-            Climb(n, 2, ref count);
+            return Climb(n - 1) + Climb(n - 2);
         }
     }
 }
