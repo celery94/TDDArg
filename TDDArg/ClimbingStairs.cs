@@ -4,15 +4,19 @@
     {
         public static int ClimbStairs(int n)
         {
-            return Climb(n);
-        }
+            int a = 1, b = 2;
 
-        public static int Climb(int n)
-        {
-            if (n == 1) return 1;
-            if (n == 2) return 2;
+            if (n == 1) return a;
+            if (n == 2) return b;
 
-            return Climb(n - 1) + Climb(n - 2);
+            for (int i = 3; i <= n; i++)
+            {
+                int c = a + b;
+                a = b;
+                b = c;
+            }
+
+            return b;
         }
     }
 }
