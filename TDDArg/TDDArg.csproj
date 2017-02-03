@@ -61,6 +61,7 @@
     <Compile Include="MergeKSortedLists.cs" />
     <Compile Include="MergeTwoSortedLists.cs" />
     <Compile Include="MinimumPathSum.cs" />
+    <Compile Include="MinimumWindowSubstring.cs" />
     <Compile Include="MultiplyStrings.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="PlusOne.cs" />
