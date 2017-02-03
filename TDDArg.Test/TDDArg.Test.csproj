@@ -64,6 +64,7 @@
     <Compile Include="RegularExpressionMatchingTest.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayIITest.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayTest.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedListTest.cs" />
     <Compile Include="RemoveElementOfArrayTest.cs" />
     <Compile Include="RemoveNthNodeFromEndOfListTest.cs" />
     <Compile Include="ReverseIntTest.cs" />

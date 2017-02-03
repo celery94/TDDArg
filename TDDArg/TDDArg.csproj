@@ -68,6 +68,7 @@
     <Compile Include="RegularExpressionMatching.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayII.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedList.cs" />
     <Compile Include="RemoveElementOfArray.cs" />
     <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
