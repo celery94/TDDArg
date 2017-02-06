@@ -69,6 +69,7 @@
     <Compile Include="RemoveDuplicatesFromSortedArray.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayII.cs" />
     <Compile Include="RemoveDuplicatesFromSortedList.cs" />
+    <Compile Include="RemoveDuplicatesFromSortedListII.cs" />
     <Compile Include="RemoveElementOfArray.cs" />
     <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
