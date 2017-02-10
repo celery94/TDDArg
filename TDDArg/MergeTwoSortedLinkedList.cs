@@ -1,17 +1,22 @@
 ﻿using System;
-
 namespace TDDArg
 {
-	public class MergeTwoSortedLists
+	public class Node
 	{
-		public static ListNode MergeTwoLists(ListNode head1, ListNode head2)
+		public int data { get; set; }
+		public Node next { get; set; }
+	}
+
+	public class MergeTwoSortedLinkedList
+	{
+		public Node Merge(Node head1, Node head2)
 		{
-			var head = new ListNode(0);
+			var head = new Node();
 			var current = head;
 
 			while (head1 != null && head2 != null)
 			{
-				if (head1.val < head2.val)
+				if (head1.data < head2.data)
 				{
 					current.next = head1;
 					head1 = head1.next;
