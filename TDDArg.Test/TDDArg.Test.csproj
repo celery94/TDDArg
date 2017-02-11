@@ -97,6 +97,7 @@
     <Compile Include="RotateListTest.cs" />
     <Compile Include="MaximumDepthOfBinaryTreeTest.cs" />
     <Compile Include="ConvertSortedArrayToBinarySearchTreeTest.cs" />
+    <Compile Include="BinaryTreePreorderTraversalTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
