@@ -9,11 +9,18 @@ namespace TDDArg
 		{
 			List<int> list = new List<int>();
 
-			if (root != null)
+			Stack<TreeNode> stack = new Stack<TreeNode>();
+			stack.Push(root);
+			while (stack.Count > 0)
 			{
-				list.Add(root.val);
-				list.AddRange(PreorderTraversal(root.left));
-				list.AddRange(PreorderTraversal(root.right));
+				var current = stack.Pop();
+
+				if (current != null)
+				{
+					list.Add(current.val);
+					stack.Push(current.right);
+					stack.Push(current.left);
+				}
 			}
 
 			return list;
