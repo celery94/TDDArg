@@ -7,14 +7,13 @@ namespace TDDArg
 		{
 			if (root == null) return 0;
 
-			if (root.left == null) return 1 + Min(root.right);
-			if (root.right == null) return 1 + Min(root.right);
+			if (root.left == null && root.right == null)
+				return 1;
+			else if (root.left == null)
+				return 1 + MinDepth(root.right);
 
-			return 1 + Math.Min(Min(root.left), Min(root.right));
-		}
-
-		private int Min(TreeNode root) { 
-			if (root == null) return 0;
+			else if (root.right == null)
+				return 1 + MinDepth(root.left);
 
 			return 1 + Math.Min(MinDepth(root.left), MinDepth(root.right));
 		}
