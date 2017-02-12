@@ -110,6 +110,7 @@
     <Compile Include="PathSumII.cs" />
     <Compile Include="TwoSumII.cs" />
     <Compile Include="LinkedListCycle.cs" />
+    <Compile Include="PartitionEqualSubsetSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -100,6 +100,7 @@
     <Compile Include="BinaryTreePreorderTraversalTest.cs" />
     <Compile Include="BinaryTreePostorderTraversalTest.cs" />
     <Compile Include="TwoSumIITest.cs" />
+    <Compile Include="PartitionEqualSubsetSumTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
