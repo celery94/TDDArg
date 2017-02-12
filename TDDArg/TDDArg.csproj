@@ -112,6 +112,7 @@
     <Compile Include="LinkedListCycle.cs" />
     <Compile Include="PartitionEqualSubsetSum.cs" />
     <Compile Include="WordPattern.cs" />
+    <Compile Include="TargetSum.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

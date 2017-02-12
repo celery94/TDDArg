@@ -102,6 +102,7 @@
     <Compile Include="TwoSumIITest.cs" />
     <Compile Include="PartitionEqualSubsetSumTest.cs" />
     <Compile Include="WordPatternTest.cs" />
+    <Compile Include="TargetSumTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
