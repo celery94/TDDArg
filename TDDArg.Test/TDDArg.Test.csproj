@@ -99,6 +99,7 @@
     <Compile Include="ConvertSortedArrayToBinarySearchTreeTest.cs" />
     <Compile Include="BinaryTreePreorderTraversalTest.cs" />
     <Compile Include="BinaryTreePostorderTraversalTest.cs" />
+    <Compile Include="TwoSumIITest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
