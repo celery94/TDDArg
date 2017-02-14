@@ -8,35 +8,17 @@ namespace TDDArg
         {
             if (root == null) return true;
 
-            var level = 0;
-            var maxLevel = 0;
-            var minLevel = 0;
+            int left = Depth(root.left);
+            int rigth = Depth(root.right);
 
-            IsBalanced(root, ref level, ref maxLevel, ref minLevel);
-
-            return Math.Abs(maxLevel - minLevel) <= 1;
+            return Math.Abs(left - rigth) <= 1 && IsBalanced(root.left) && IsBalanced(root.right);
         }
 
-        private void IsBalanced(TreeNode node, ref int level, ref int maxLevel, ref int minLevel)
+        private int Depth(TreeNode root)
         {
-            level++;
+            if (root == null) return 0;
 
-            if (node.left == null && node.right == null)
-            {
-                if (maxLevel == 0) maxLevel = level;
-                if (maxLevel == 0) minLevel = level;
-
-                if (level > maxLevel) maxLevel = level;
-                if (level < minLevel) minLevel = level;
-            }
-
-            if (node.left != null)
-                IsBalanced(node.left, ref level, ref maxLevel, ref minLevel);
-
-            if (node.right != null)
-                IsBalanced(node.right, ref level, ref maxLevel, ref minLevel);
-
-            level--;
+            return Math.Max(Depth(root.left), Depth(root.right)) + 1;
         }
     }
 }
