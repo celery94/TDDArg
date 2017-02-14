@@ -74,6 +74,7 @@
     <Compile Include="RemoveNthNodeFromEndOfList.cs" />
     <Compile Include="ReverseInt.cs" />
     <Compile Include="ReverseLinkedList.cs" />
+    <Compile Include="ReverseLinkedListII.cs" />
     <Compile Include="ReverseNodesInKGroup.cs" />
     <Compile Include="RomanToInteger.cs" />
     <Compile Include="SearchForARange.cs" />
