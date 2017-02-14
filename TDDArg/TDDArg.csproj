@@ -84,6 +84,7 @@
     <Compile Include="SortColors.cs" />
     <Compile Include="StringtoInteger .cs" />
     <Compile Include="SubstringWithConcatenationOfAllWords.cs" />
+    <Compile Include="SymmetricTree.cs" />
     <Compile Include="ThreeSum.cs" />
     <Compile Include="ThreeSumClosest.cs" />
     <Compile Include="TwoSum.cs" />
