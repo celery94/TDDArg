@@ -60,6 +60,7 @@
     <Compile Include="MinimumWindowSubstringTest.cs" />
     <Compile Include="MultiplyStringsTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
+    <Compile Include="PartitionListTest.cs" />
     <Compile Include="PlusOneTest.cs" />
     <Compile Include="RegularExpressionMatchingTest.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArrayIITest.cs" />

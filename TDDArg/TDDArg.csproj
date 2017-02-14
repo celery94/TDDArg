@@ -64,6 +64,7 @@
     <Compile Include="MinimumWindowSubstring.cs" />
     <Compile Include="MultiplyStrings.cs" />
     <Compile Include="PalindromeNumber.cs" />
+    <Compile Include="PartitionList.cs" />
     <Compile Include="PlusOne.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArray.cs" />
