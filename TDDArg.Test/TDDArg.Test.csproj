@@ -106,6 +106,8 @@
     <Compile Include="WordPatternTest.cs" />
     <Compile Include="TargetSumTest.cs" />
     <Compile Include="MinimumSizeSubarraySumTest.cs" />
+    <Compile Include="PrintLinkedListFromEndTest.cs" />
+    <Compile Include="SortAgesTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TDDArg\TDDArg.csproj">
