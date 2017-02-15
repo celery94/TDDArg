@@ -19,11 +19,7 @@
                 }
                 else
                 {
-                    if (prices[i + 1] > prices[i])
-                    {
-                        continue;
-                    }
-                    else
+                    if (prices[i + 1] <= prices[i])
                     {
                         profit += prices[i] - buy;
                         buy = -1;
