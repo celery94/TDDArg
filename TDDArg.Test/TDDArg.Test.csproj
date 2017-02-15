@@ -38,6 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoNumberTest.cs" />
+    <Compile Include="BestTimeToBuyAndSellStockTest.cs" />
     <Compile Include="ClimbingStairsTest.cs" />
     <Compile Include="CombinationSumIITest.cs" />
     <Compile Include="CombinationSumTest.cs" />
