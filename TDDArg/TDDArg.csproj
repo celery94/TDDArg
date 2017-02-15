@@ -70,6 +70,8 @@
     <Compile Include="MultiplyStrings.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="PartitionList.cs" />
+    <Compile Include="PascalsTriangle.cs" />
+    <Compile Include="PascalsTriangleII.cs" />
     <Compile Include="PlusOne.cs" />
     <Compile Include="RegularExpressionMatching.cs" />
     <Compile Include="RemoveDuplicatesFromSortedArray.cs" />
