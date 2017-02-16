@@ -49,6 +49,7 @@
     <Compile Include="FlattenBinaryTreeToLinkedListTest.cs" />
     <Compile Include="FourSumTest.cs" />
     <Compile Include="GenerateParenthesesTest.cs" />
+    <Compile Include="HammingDistanceTest.cs" />
     <Compile Include="ImplementStrStrTest.cs" />
     <Compile Include="IntegerToRomanTest.cs" />
     <Compile Include="LengthOfLongestSubstringTest.cs" />
