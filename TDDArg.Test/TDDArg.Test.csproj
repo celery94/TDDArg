@@ -62,6 +62,7 @@
     <Compile Include="MinimumPathSumTest.cs" />
     <Compile Include="MinimumWindowSubstringTest.cs" />
     <Compile Include="MultiplyStringsTest.cs" />
+    <Compile Include="MyStackTest.cs" />
     <Compile Include="PalindromeNumberTest.cs" />
     <Compile Include="PartitionListTest.cs" />
     <Compile Include="PlusOneTest.cs" />

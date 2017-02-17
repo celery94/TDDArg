@@ -58,6 +58,7 @@
     <Compile Include="FourSum.cs" />
     <Compile Include="GenerateParentheses.cs" />
     <Compile Include="HammingDistance.cs" />
+    <Compile Include="ImplementStackUsingQueues.cs" />
     <Compile Include="ImplementStrStr.cs" />
     <Compile Include="IntegerToRoman.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
