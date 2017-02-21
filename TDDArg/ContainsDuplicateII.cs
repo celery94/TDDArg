@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace TDDArg
 {
 	public class ContainsDuplicateII
@@ -7,16 +9,22 @@ namespace TDDArg
 		{
 			if (k == 0) return false;
 
+			Dictionary<int, int> dic = new Dictionary<int, int>();
+
 			for (int i = 0; i < nums.Length; i++)
 			{
-				var index = i + 1;
-				while (index <= i + k && index < nums.Length)
+				var num = nums[i];
+				if (dic.ContainsKey(num))
 				{
-					if (nums[i] == nums[index])
-					{
+					var diff = i - dic[num];
+					if (diff <= k)
 						return true;
-					}
-					index++;
+					else
+						dic[num] = i;
+				}
+				else
+				{
+					dic.Add(num, i);
 				}
 			}
 
