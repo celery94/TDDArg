@@ -4,6 +4,7 @@ namespace TDDArg
 	public class NumArray
 	{
 		private int[] sums;
+		private int[] _nums;
 
 		public NumArray(int[] nums)
 		{
@@ -15,6 +16,18 @@ namespace TDDArg
 				else
 					sums[i] = sums[i - 1] + nums[i];
 			}
+
+			_nums = nums;
+		}
+
+		public void Update(int i, int val)
+		{
+			var diff = val - _nums[i];
+			for (int index = i; index < sums.Length; index++)
+			{
+				sums[index] += diff;
+			}
+			_nums[i] = val;
 		}
 
 		public int SumRange(int i, int j)
