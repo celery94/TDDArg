@@ -148,6 +148,7 @@
     <Compile Include="ContainsDuplicateII.cs" />
     <Compile Include="RangeSumQueryImmutable.cs" />
     <Compile Include="InsertionSortList.cs" />
+    <Compile Include="UrlReplace.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
