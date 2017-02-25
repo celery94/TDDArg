@@ -150,6 +150,8 @@
     <Compile Include="InsertionSortList.cs" />
     <Compile Include="UrlReplace.cs" />
     <Compile Include="FindMinimumInRotatedSortedArray.cs" />
+    <Compile Include="ValidateBinarySearchTree.cs" />
+    <Compile Include="BinaryTreePaths.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
