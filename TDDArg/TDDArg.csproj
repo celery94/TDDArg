@@ -149,6 +149,7 @@
     <Compile Include="RangeSumQueryImmutable.cs" />
     <Compile Include="InsertionSortList.cs" />
     <Compile Include="UrlReplace.cs" />
+    <Compile Include="FindMinimumInRotatedSortedArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
