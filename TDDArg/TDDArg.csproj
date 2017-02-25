@@ -152,6 +152,7 @@
     <Compile Include="FindMinimumInRotatedSortedArray.cs" />
     <Compile Include="ValidateBinarySearchTree.cs" />
     <Compile Include="BinaryTreePaths.cs" />
+    <Compile Include="MoreThanHalfNum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
