@@ -147,6 +147,7 @@
     <Compile Include="RemoveLinkedListElements.cs" />
     <Compile Include="ContainsDuplicateII.cs" />
     <Compile Include="RangeSumQueryImmutable.cs" />
+    <Compile Include="InsertionSortList.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
