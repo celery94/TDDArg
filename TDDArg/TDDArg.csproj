@@ -155,6 +155,7 @@
     <Compile Include="MoreThanHalfNum.cs" />
     <Compile Include="KthLargestElementInAnArray.cs" />
     <Compile Include="WordBreak.cs" />
+    <Compile Include="Subsets.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
