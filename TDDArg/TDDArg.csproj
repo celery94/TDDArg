@@ -153,6 +153,7 @@
     <Compile Include="ValidateBinarySearchTree.cs" />
     <Compile Include="BinaryTreePaths.cs" />
     <Compile Include="MoreThanHalfNum.cs" />
+    <Compile Include="KthLargestElementInAnArray.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
