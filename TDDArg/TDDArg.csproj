@@ -154,6 +154,7 @@
     <Compile Include="BinaryTreePaths.cs" />
     <Compile Include="MoreThanHalfNum.cs" />
     <Compile Include="KthLargestElementInAnArray.cs" />
+    <Compile Include="WordBreak.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
