@@ -18,26 +18,23 @@ namespace TDDArg
                 fast = fast.next.next;
             }
 
-            ListNode pre = null;
+            ListNode current = null;
             slow = slow.next;
-            var next = slow.next;
-
-            while (next != null)
-            {
-                slow.next = pre;
-                pre = slow;
-
-                slow = next;
-                next = slow.next;
-            }
-            slow.next = pre;
-
 
             while (slow != null)
             {
-                if (slow.val != head.val) return false;
+                var next = slow.next;
+                slow.next = current;
+                current = slow;
 
-                slow = slow.next;
+                slow = next;
+            }
+
+            while (current != null)
+            {
+                if (current.val != head.val) return false;
+
+                current = current.next;
                 head = head.next;
             }
 
