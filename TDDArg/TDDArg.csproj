@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddTwoNumber.cs" />
+    <Compile Include="AddTwoNumbersII.cs" />
     <Compile Include="BalancedBinaryTree.cs" />
     <Compile Include="BestTimeToBuyAndSellStock.cs" />
     <Compile Include="BestTimeToBuyAndSellStockII.cs" />
@@ -77,6 +78,7 @@
     <Compile Include="MinimumPathSum.cs" />
     <Compile Include="MinimumWindowSubstring.cs" />
     <Compile Include="MultiplyStrings.cs" />
+    <Compile Include="PalindromeLinkedList.cs" />
     <Compile Include="PalindromeNumber.cs" />
     <Compile Include="PartitionList.cs" />
     <Compile Include="PascalsTriangle.cs" />
