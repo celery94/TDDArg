@@ -71,6 +71,7 @@
     <Compile Include="LetterCombinationsOfAPhoneNumber.cs" />
     <Compile Include="ListNode.cs" />
     <Compile Include="LongestCommonPrefix.cs" />
+    <Compile Include="LongestConsecutiveSequence.cs" />
     <Compile Include="LongestPalindrome.cs" />
     <Compile Include="LongestValidParentheses.cs" />
     <Compile Include="MergeKSortedLists.cs" />
