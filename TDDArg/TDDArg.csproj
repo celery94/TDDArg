@@ -164,6 +164,7 @@
     <Compile Include="WordBreak.cs" />
     <Compile Include="Subsets.cs" />
     <Compile Include="TreeSumII.cs" />
+    <Compile Include="FindBottomLeftTreeValue.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
