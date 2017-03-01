@@ -99,6 +99,7 @@
     <Compile Include="ReverseNodesInKGroup.cs" />
     <Compile Include="ReverseWordsInAString.cs" />
     <Compile Include="RomanToInteger.cs" />
+    <Compile Include="RotateArray.cs" />
     <Compile Include="SearchForARange.cs" />
     <Compile Include="SearchInsertPosition.cs" />
     <Compile Include="SortColors.cs" />
