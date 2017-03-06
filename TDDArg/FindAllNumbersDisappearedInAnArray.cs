@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace TDDArg
@@ -10,7 +11,6 @@ namespace TDDArg
         {
             int index = 0;
 
-            List<int> result = new List<int>();
             while (index < nums.Length)
             {
                 if (nums[index] != index + 1 && nums[nums[index] - 1] != nums[index])
@@ -25,9 +25,31 @@ namespace TDDArg
                 }
             }
 
+            List<int> result = new List<int>();
             for (int i = 0; i < nums.Length; i++)
             {
                 if (nums[i] != i + 1) result.Add(i + 1);
+            }
+
+            return result;
+        }
+
+        public IList<int> FindDisappearedNumbersII(int[] nums)
+        {
+            foreach (var num in nums)
+            {
+                var index = Math.Abs(num) - 1;
+
+                if (nums[index] > 0)
+                {
+                    nums[index] = 0 - nums[index];
+                }
+            }
+
+            List<int> result = new List<int>();
+            for (var i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] > 0) result.Add(i + 1);
             }
 
             return result;
