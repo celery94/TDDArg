@@ -171,6 +171,7 @@
     <Compile Include="TreeSumII.cs" />
     <Compile Include="FindBottomLeftTreeValue.cs" />
     <Compile Include="PowerOfFour.cs" />
+    <Compile Include="PowerOfTwo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
