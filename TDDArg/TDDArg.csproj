@@ -57,6 +57,7 @@
     <Compile Include="CombinationSumII.cs" />
     <Compile Include="ContainerWithMostWater.cs" />
     <Compile Include="DivideTwoIntegers.cs" />
+    <Compile Include="FindAllNumbersDisappearedInAnArray.cs" />
     <Compile Include="FindMedianSortedArrays.cs" />
     <Compile Include="FirstMissingPositive.cs" />
     <Compile Include="FlattenBinaryTreeToLinkedList.cs" />
