@@ -170,6 +170,7 @@
     <Compile Include="Subsets.cs" />
     <Compile Include="TreeSumII.cs" />
     <Compile Include="FindBottomLeftTreeValue.cs" />
+    <Compile Include="PowerOfFour.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
