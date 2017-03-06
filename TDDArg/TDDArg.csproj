@@ -69,6 +69,7 @@
     <Compile Include="ImplementStackUsingQueues.cs" />
     <Compile Include="ImplementStrStr.cs" />
     <Compile Include="IntegerToRoman.cs" />
+    <Compile Include="KeyboardRow.cs" />
     <Compile Include="LengthOfLongestSubstring.cs" />
     <Compile Include="LetterCombinationsOfAPhoneNumber.cs" />
     <Compile Include="ListNode.cs" />
