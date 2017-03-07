@@ -173,6 +173,7 @@
     <Compile Include="PowerOfFour.cs" />
     <Compile Include="PowerOfTwo.cs" />
     <Compile Include="FindModeInBinarySearchTree.cs" />
+    <Compile Include="InsertNodeInABinarySearchTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
