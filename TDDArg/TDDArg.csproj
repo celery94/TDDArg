@@ -172,6 +172,7 @@
     <Compile Include="FindBottomLeftTreeValue.cs" />
     <Compile Include="PowerOfFour.cs" />
     <Compile Include="PowerOfTwo.cs" />
+    <Compile Include="FindModeInBinarySearchTree.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
